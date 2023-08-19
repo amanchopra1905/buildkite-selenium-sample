@@ -21,7 +21,7 @@
 
 ## Documentation
 
-Documentation for running this example can be found [here](https://www.lambdatest.com/support/docs/buildkite-integration-with-lambdatest/)
+Documentation for running this example can be found [here](https://www.lambdatest.com/support/docs/buildkite-integration-with-lambdatest/).
 
 ## Tutorials 📙
 
