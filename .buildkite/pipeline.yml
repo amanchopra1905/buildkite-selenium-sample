@@ -1,0 +1,4 @@
+steps:
+  - label: ":docs-testing:"
+    commands:
+      - python3 lambdatest.py
