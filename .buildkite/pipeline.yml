@@ -1,8 +1,4 @@
 steps:
-- name: Run tests on LambdaTest
-  script: |  # Multi-line script for LambdaTest integration
-    export LT_USERNAME="amanc"  # Replace with your LambdaTest username
-    export LT_ACCESS_KEY="pyimrYgw2nNu717noPaaHKZrFK4l9XXixmm6U2YquuBHQtTQ0a"  # Replace with your LambdaTest access key
   - label: ":docs-testing:"
     commands:
       - python3 lambdatest.py
