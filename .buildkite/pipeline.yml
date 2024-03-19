@@ -1,4 +1,15 @@
-steps:
-  - label: ":docs-testing:"
-    commands:
-      - python3 lambdatest.py
+pipelines:
+  - label: "docs-testing"  
+  
+    agents:  # Define the agent queue or specific agent to run the pipeline on
+      queue: my-agent-queue  # Replace with your queue name or agent
+
+    steps:
+      - label: "Install dependencies"
+        command: "pip install -U selenium"  # Replace with your command to install dependencies (e.g., pip install)
+
+      - label: "Run tests on LambdaTest"
+        commands: |
+          export LT_USERNAME="<your_username>"
+          export LT_ACCESS_KEY="<your_access_key>"
+          python3 lambdatest.py
